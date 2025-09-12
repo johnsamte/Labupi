@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Left number -->
+    <TextView
+        android:id="@+id/laNumber"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="20"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="end" />
+
+    <!-- Middle text -->
+    <TextView
+        android:id="@+id/laThulu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="hiai ah a contntfsdfsdfsdfsdfsf hong ki"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="start" />
+
+    <!-- Right tag -->
+    <TextView
+        android:id="@+id/labuMin"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="BNP"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/highlight"
+        android:gravity="end" />
+
+</LinearLayout>

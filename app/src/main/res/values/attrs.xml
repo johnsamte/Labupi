@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="labupiBackground" format="color"/>
+    <attr name="bnl_pnl_backG" format="color"/>
+    <attr name="bnlpnlTextClr" format="color" />
+</resources>

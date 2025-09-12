@@ -1,0 +1,88 @@
+package com.johnsamte.labupi
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.johnsamte.labupi.databinding.ItemContentBnlPnlBinding
+
+class ContentBnlAdapter (
+    private val onItemClick: (LabuContent) -> Unit
+) : ListAdapter<LabuContent, ContentBnlAdapter.ContentBnlViewHolder>(DiffCallback()) {
+
+    private var fullList: List<LabuContent> = emptyList() // Keep original list for filtering
+
+    inner class ContentBnlViewHolder(private val binding: ItemContentBnlPnlBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(contentBNL: LabuContent) {
+            binding.laNumber.text = contentBNL.la_number
+            binding.laThulu.text = contentBNL.la_thulu
+
+            binding.root.setOnClickListener {
+                onItemClick(contentBNL)
+            }
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentBnlViewHolder {
+        val binding = ItemContentBnlPnlBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
+        return ContentBnlViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: ContentBnlViewHolder, position: Int) {
+        holder.bind(getItem(position))
+    }
+
+    /**
+     * Set initial data
+     */
+    fun submitFullList(list: List<LabuContent>) {
+        fullList = list
+        submitList(list)
+    }
+
+    /**
+     * Filtering
+     */
+    fun filter(query: String) {
+        val filtered = if (query.isEmpty()) {
+            fullList
+        } else {
+            fullList.filter {
+                it.la_thulu.contains(query, ignoreCase = true) ||
+                        it.la_number.contains(query, ignoreCase = true)
+            }
+        }
+        submitList(filtered)
+    }
+
+    /**
+     * Sorting
+     */
+    fun sortItemsAlphabetically() {
+        submitList(currentList.sortedBy { it.la_thulu })
+    }
+
+    fun sortItemsById() {
+        submitList(currentList.sortedBy { it.id })
+    }
+
+    /**
+     * DiffUtil callback
+     */
+    class DiffCallback : DiffUtil.ItemCallback<LabuContent>() {
+        override fun areItemsTheSame(oldItem: LabuContent, newItem: LabuContent): Boolean {
+            return oldItem.id == newItem.id // unique identifier
+        }
+
+        override fun areContentsTheSame(oldItem: LabuContent, newItem: LabuContent): Boolean {
+            return oldItem == newItem // data class handles equality
+        }
+    }
+}
+

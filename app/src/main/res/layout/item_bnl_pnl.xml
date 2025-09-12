@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/labupiBackground">
+
+    <TextView
+        android:id="@+id/laNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/offWhite"
+        app:layout_constraintEnd_toStartOf="@id/laThulu"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/laThulu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Al Thupi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/offWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/laNumber"
+        app:layout_constraintTop_toTopOf="@id/laNumber" />
+
+    <TextView
+        android:id="@+id/laThupineu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="(Al Thupi)"
+        android:textSize="11sp"
+        android:textColor="@color/offWhite"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laThulu" />
+
+
+    <ImageView
+        android:id="@+id/bookmarked"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"
+        android:src="@drawable/icon_bookmark"
+        app:layout_constraintBottom_toBottomOf="@id/laThulu"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laThupineu">
+
+        <!-- Wrapping all contents inside a RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Title 1 (Top Left) -->
+            <TextView
+                android:id="@+id/laPhuaktu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:text="Title text khat"
+                android:textSize="12sp"
+                android:textColor="@color/offWhite"
+                android:textStyle="bold" />
+
+            <!-- Title 2 (Top Right) -->
+            <TextView
+                android:id="@+id/laPhuaktu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:text="Title text nihna"
+                android:textSize="12sp"
+                android:textColor="@color/offWhite"
+                android:textStyle="bold" />
+
+            <!-- Title 3 (Below Title 1, Left) -->
+            <TextView
+                android:id="@+id/laPhuaktu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laPhuaktu1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:text="Title text thumna"
+                android:textSize="12sp"
+                android:textColor="@color/offWhite"
+                android:textStyle="bold" />
+
+            <!-- Title 4 (Below Title 2, Right) -->
+            <TextView
+                android:id="@+id/laPhuaktu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laPhuaktu2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:text="Title text lina"
+                android:textSize="12sp"
+                android:textColor="@color/offWhite"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/laKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laPhuaktu3"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/laKeyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="DOH IS C"
+                    android:textSize="12sp"
+                    android:textColor="@color/offWhite"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/laKeyIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_play"
+                    android:contentDescription="Key Icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/verse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laKey"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite" />
+
+                <TextView
+                    android:id="@+id/laText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="La display here\nsecond line\nthird line"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/laChorus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/verse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/laChorus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/verse3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/offWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText5"
+                    android:textColor="@color/offWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus5"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText6"
+                    android:textColor="@color/offWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText7"
+                    android:textColor="@color/offWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus7"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laChorus8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/chorus8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laChorus8"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/verse10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse9"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/laNumbering10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/offWhite"
+                    android:textSize="14sp"
+                    android:padding="1dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/laText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/offWhite"
+                    android:text="la display na mun d"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/laCopyrightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verse10"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="36dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

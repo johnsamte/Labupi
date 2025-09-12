@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/labupiBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/labupiBackground"
+        app:popupTheme="@style/Theme.Labupi"
+        app:title="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/biaknaLa"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/bnl_icon_update"
+            android:contentDescription="@string/bnl"/>
+
+        <ImageView
+            android:id="@+id/pathianNgaihla"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/pnl_icon_update"
+            android:contentDescription="@string/pnl"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zonBaihlamna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/thupi_zon_baihlamna"
+        android:textSize="20sp"
+        android:textColor="@color/offRed"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/thupiRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+
+</LinearLayout>

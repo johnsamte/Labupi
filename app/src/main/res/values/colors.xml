@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="labupiBackground">#FFFFFFFF</color>
+    <color name="secondary">#F2ECEC</color>
+    <color name="highlight">#F6AFAF</color>
+    <color name="red">#d71920</color>
+    <color name="yellow">#f6ff00</color>
+    <color name="green">#00a651</color>
+
+    <color name="icon_bg">#444444</color>
+
+    <color name="background_color">#52FFFFFF</color>
+    <color name="border_color">#72AAAAAA</color>
+
+    <color name="bookmark_bg">#25ABABAB</color>
+    <color name="bookmark_bg_end">#7A666565</color>
+    <color name="bookmark_radius">#00a651</color>
+    <color name="mat600">#0173AB</color>
+
+    <color name="textHighlight">#2CAC36</color>
+
+
+    <color name="offWhite">#323232</color>
+    <color name="offRed">#780307</color>
+
+    <color name="gray">#A5A5A5</color>
+</resources>

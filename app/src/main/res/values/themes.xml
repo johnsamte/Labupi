@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Labupi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/offWhite</item>
+        <item name="labupiBackground">@color/white</item>
+        <item name="bnl_pnl_backG">@color/green</item>
+        <item name="bnlpnlTextClr">@color/black</item>
+
+
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+
+
+    </style>
+    <style name="Theme.Labupi" parent="Base.Theme.Labupi" />
+
+    <style name="Theme.Labupi.Splash" parent="Theme.SplashScreen">
+    <!-- Splash background color -->
+    <item name="windowSplashScreenBackground">?attr/labupiBackground</item>
+    <!-- Splash icon -->
+    <item name="windowSplashScreenAnimatedIcon">@drawable/splash_light</item>
+    <!-- After splash, switch to app theme -->
+    <item name="postSplashScreenTheme">@style/Theme.Labupi</item>
+
+    </style>
+
+
+</resources>

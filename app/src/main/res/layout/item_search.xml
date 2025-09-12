@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="6dp"
+        android:textSize="18sp"
+        android:textColor="@color/offWhite"
+        android:textStyle="bold"
+        android:textAlignment="viewEnd"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/contentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/numberText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/offWhite"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:textAlignment="viewStart"
+        android:text="content kidisplayna" />
+
+    <TextView
+        android:id="@+id/types"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/contentTitle"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/highlight"
+        android:textAlignment="viewEnd"
+        android:text="BNP" />
+
+    <!-- ✅ Snippet of la_text1 -->
+    <TextView
+        android:id="@+id/snippetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentTitle"
+        android:layout_toEndOf="@id/numberText"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:text="This is la_text1 snippet..." />
+
+    <!-- ✅ Snippet of chorus1 -->
+    <TextView
+        android:id="@+id/snippetChorus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snippetText"
+        android:layout_toEndOf="@id/numberText"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:text="This is chorus1 snippet..." />
+
+</RelativeLayout>

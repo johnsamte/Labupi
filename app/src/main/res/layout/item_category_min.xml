@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp">
+
+    <!-- Number -->
+    <TextView
+        android:id="@+id/idNumber"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/offWhite"
+        android:textAlignment="viewEnd"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Content -->
+    <TextView
+        android:id="@+id/aThupi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/idNumber"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:ellipsize="end"
+        android:textColor="@color/offWhite"
+        android:singleLine="false"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/laContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aThupi"
+        android:layout_toEndOf="@id/idNumber"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="ExtraText" />
+
+    <!-- Nested grid of la_id -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aThupi"
+        android:layout_toEndOf="@id/idNumber"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        tools:listitem="@layout/item_number"/>
+</RelativeLayout>
+
