@@ -229,7 +229,8 @@ class PnlPagerAdapter (
 
         val choruses = listOf(
             item.chorus1, item.chorus2, item.chorus3, item.chorus4,
-            item.chorus5, item.chorus6, item.chorus7, item.chorus8
+            item.chorus5, item.chorus6, item.chorus7, item.chorus8,
+            null, null
         )
 
         for (i in verses.indices) {

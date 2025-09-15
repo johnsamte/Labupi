@@ -24,4 +24,9 @@
         android:title="@string/about"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/update"
+        android:title="@string/check_updates"
+        app:showAsAction="never"/>
+
 </menu>

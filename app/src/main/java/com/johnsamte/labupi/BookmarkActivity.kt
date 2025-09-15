@@ -2,7 +2,6 @@ package com.johnsamte.labupi
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.google.android.material.tabs.TabLayoutMediator
 import com.johnsamte.labupi.databinding.ActivityBookmarkBinding
 

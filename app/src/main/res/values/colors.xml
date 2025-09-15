@@ -12,7 +12,7 @@
     <color name="icon_bg">#444444</color>
 
     <color name="background_color">#52FFFFFF</color>
-    <color name="border_color">#72AAAAAA</color>
+    <color name="border_color">#72858585</color>
 
     <color name="bookmark_bg">#25ABABAB</color>
     <color name="bookmark_bg_end">#7A666565</color>
@@ -20,10 +20,12 @@
     <color name="mat600">#0173AB</color>
 
     <color name="textHighlight">#2CAC36</color>
-
+    <color name="background">#000000</color>
 
     <color name="offWhite">#323232</color>
     <color name="offRed">#780307</color>
+    <color name="button_bg">#515151</color>
 
+    <color name="button_text">#FFD600</color>
     <color name="gray">#A5A5A5</color>
 </resources>

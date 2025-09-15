@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="?attr/labupiBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/aboutToolbar"
+        app:title="About Labupi" />
+
+    <!-- TabLayout for tabs -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/aboutTap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="5dp"
+        app:tabGravity="center"
+        app:tabSelectedTextColor="@color/mat600"
+        app:tabIndicatorColor="@color/mat600"
+        android:contentDescription="@string/aboutview"
+        android:background="?attr/labupiBackground" />
+
+    <!-- ViewPager2 for Page Content -->
+   <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/aboutPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

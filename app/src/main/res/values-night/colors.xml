@@ -16,6 +16,10 @@
     <color name="offWhite">#F1F1F1</color>
     <color name="offRed">#B00409</color>
     <color name="textHighlight">#AB900F</color>
-
+    <color name="background">#FFFFFF</color>
     <color name="highlight">#C00404</color>
+    <color name="button_bg">#919191</color>
+    <color name="button_text">#D50000</color>
+
+    <color name="border_color">#727C7C7C</color>
 </resources>

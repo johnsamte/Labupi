@@ -11,5 +11,14 @@
     <string name="add_note">Add note</string>
     <string name="delete">Delete</string>
     <string name="bookmark_note">📝  %1$s</string>
+    <string name="check_updates">Check Updates</string>
+
+    <string name="check_for_update">Check for Update</string>
+    <string name="downloading_progress">Downloading… %1$d%%</string>
+    <string name="download_failed">Download failed</string>
+    <string name="preparing_download">Preparing download…</string>
+    <string name="aboutview">aboutView</string>
+    <string name="download">Download</string>
+    <string name="no_download_file">No Download File</string>
 
 </resources>
