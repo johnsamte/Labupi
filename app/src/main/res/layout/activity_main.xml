@@ -49,8 +49,15 @@
         android:gravity="center"
         android:text="@string/thupi_zon_baihlamna"
         android:textSize="20sp"
-        android:textColor="@color/offRed"
+        android:textColor="@color/thupi_zonna"
         android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/paite"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/thupiRecycler"

@@ -2,27 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
-    <!-- Left number -->
+    android:padding="12dp">
+
     <TextView
         android:id="@+id/laNumber"
         android:layout_width="58dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginEnd="8dp"
-        android:text="35ANB"
         android:textColor="@color/offWhite"
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="end"/>
 
-    <!-- Right text -->
+
     <TextView
         android:id="@+id/laThulu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/laNumber"
-        android:text="hiai ah a content te hong ki kisplay d"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/offWhite"

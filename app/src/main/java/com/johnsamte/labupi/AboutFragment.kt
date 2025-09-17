@@ -49,6 +49,8 @@ class AboutFragment : Fragment() {
             <br>
             <p><b>Developed by:</b> Johnsamte</p>
             <p><b>Email:</b> <a href="mailto:johnsamte28@gmail.com">support@labupi.app</a></p>
+            <br>
+            
         """.trimIndent()
 
         binding.aboutTextView.text = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_COMPACT)

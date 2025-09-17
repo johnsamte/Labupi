@@ -20,6 +20,7 @@
     <color name="highlight">#C00404</color>
     <color name="button_bg">#919191</color>
     <color name="button_text">#D50000</color>
+    <color name="thupi_zonna">#CFCFCF</color>
 
     <color name="border_color">#727C7C7C</color>
 </resources>
