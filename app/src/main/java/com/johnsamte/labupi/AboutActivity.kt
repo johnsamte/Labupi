@@ -20,7 +20,7 @@ class AboutActivity : AppCompatActivity() {
         binding.aboutPager.adapter = adapter
         TabLayoutMediator(binding.aboutTap, binding.aboutPager){ tab, position ->
             when (position) {
-                0 -> tab.text = "About"
+                0 -> tab.text = "About Labupi"
                 1 -> tab.text = "Changelog"
             }
         }.attach()
@@ -32,7 +32,7 @@ class AboutActivity : AppCompatActivity() {
         binding.aboutToolbar.setNavigationOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
-        binding.aboutToolbar.title = "About Labupi"
+        binding.aboutToolbar.title = "Labupi"
 
         //binding.bookmarkToolbar.post {
         // val savedTypeface = FontUtils.loadSavedFont(this)

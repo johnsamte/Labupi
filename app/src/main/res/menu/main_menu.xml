@@ -17,16 +17,19 @@
     <item
         android:id="@+id/bookmark"
         android:title="@string/bookmark"
+        android:icon="@drawable/icon_bookmark_border"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/about"
-        android:title="@string/about"
+        android:title="@string/about_labupi"
+        android:icon="@drawable/icon_info_outline"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/update"
         android:title="@string/check_updates"
+        android:icon="@drawable/icon_update"
         app:showAsAction="never"/>
 
 </menu>

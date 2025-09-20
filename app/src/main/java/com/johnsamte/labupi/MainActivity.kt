@@ -23,6 +23,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.MenuBuilder
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
@@ -83,8 +84,22 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
+
+        try {
+            val method = menu?.javaClass?.getDeclaredMethod(
+                "setOptionalIconsVisible", Boolean::class.javaPrimitiveType
+            )
+            method?.isAccessible = true
+            method?.invoke(menu, true)
+        } catch (e: Exception) {
+            e.printStackTrace() // fallback if reflection fails
+        }
+
         return true
     }
+
+
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.about -> {

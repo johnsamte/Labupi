@@ -35,18 +35,26 @@ class AboutFragment : Fragment() {
 
             <p>Whether for personal devotion, choir practice, or church services, Labupi provides 
             a convenient way to access both BNL and PNL in one place. It aims to preserve and 
-            promote the use of these songs among the community, making worship more accessible 
+            promote the use of these songs among our community, making worship more accessible 
             in today’s digital world.</p><br>
+            
+            <p>Special thanks to everyone who contributed to the making of this app. 
+            Your support, encouragement, and prayers made Labupi possible and a blessing 
+            for our community.</p><br>
 
-            <br><br>
+            <br>
             <p><b>Notes</b></p>
             <p>If you find any mistakes or missing content, please use the support below 
             to report corrections.</p>
             <p>Kipak</p>
+            <br>
+            <p><b>Disclaimer</b></p>
+            <p><i>Labupi is intended for personal and community worship use only. The app does not claim ownership
+            of the songs included. All rights remain with their respective authors, composers, and publishers.
+            If you are a copyright holder and have concerns, please contact below:</i></p>
 
             <br><br>
-            
-            <br>
+
             <p><b>Developed by:</b> Johnsamte</p>
             <p><b>Email:</b> <a href="mailto:johnsamte28@gmail.com">support@labupi.app</a></p>
             <br>

@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         app:tabIndicatorHeight="5dp"
         app:tabGravity="center"
+        android:padding="6dp"
         app:tabSelectedTextColor="@color/mat600"
         app:tabIndicatorColor="@color/mat600"
         android:contentDescription="@string/aboutview"

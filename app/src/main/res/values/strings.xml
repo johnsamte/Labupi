@@ -20,5 +20,6 @@
     <string name="aboutview">aboutView</string>
     <string name="download">Download</string>
     <string name="no_download_file">No Download File</string>
+    <string name="about_labupi">About Labupi</string>
 
 </resources>
