@@ -6,6 +6,7 @@
         <item name="labupiBackground">@color/black</item>
         <item name="bnl_pnl_backG">@color/yellow</item>
         <item name="bnlpnlTextClr">@color/red</item>
+        <item name="popupTheme">@style/PopupTheme</item>
 
         <item name="android:statusBarColor">@color/black</item>
         <item name="android:windowLightStatusBar">false</item>

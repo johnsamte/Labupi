@@ -26,6 +26,7 @@
         android:icon="@drawable/icon_info_outline"
         app:showAsAction="never"/>
 
+
     <item
         android:id="@+id/update"
         android:title="@string/check_updates"

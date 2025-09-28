@@ -14,7 +14,7 @@
         android:padding="10dp"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/labupiBackground"
-        app:popupTheme="@style/Theme.Labupi"
+        app:popupTheme="@style/PopupTheme"
         app:title="@string/app_name" />
 
     <LinearLayout

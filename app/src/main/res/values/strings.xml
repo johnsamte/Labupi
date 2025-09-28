@@ -21,5 +21,8 @@
     <string name="download">Download</string>
     <string name="no_download_file">No Download File</string>
     <string name="about_labupi">About Labupi</string>
+    <string name="searchicon">searchIcon</string>
+    <string name="la_number_leh_a_thulu_a_zonbaihlamna">La Number leh a Thulu a zonbaihlamna</string>
+    <string name="labupi_zon_baihlamna">Labupi zon baihlamna</string>
 
 </resources>

@@ -74,7 +74,7 @@ class ContentBnlActivity : AppCompatActivity() {
         val searchView = searchItem?.actionView as? androidx.appcompat.widget.SearchView
 
         // Set the query hint
-        searchView?.queryHint = "Zon-awlna"
+        searchView?.queryHint = "La Number leh Thulu Zonna"
 
         searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johnsamte.labupi.databinding.ActivityContentPnlBinding
 
@@ -75,7 +74,7 @@ class ContentPnlActivity : AppCompatActivity() {
     val searchView = searchItem?.actionView as? androidx.appcompat.widget.SearchView
 
     // Set the query hint
-    searchView?.queryHint = "Zon-awlna"
+    searchView?.queryHint = "La Number leh Thulu Zonna"
 
     searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
     override fun onQueryTextSubmit(query: String?): Boolean {
