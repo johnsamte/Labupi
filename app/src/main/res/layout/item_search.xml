@@ -11,7 +11,6 @@
         android:id="@+id/numberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="500"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="6dp"
@@ -31,8 +30,7 @@
         android:textColor="@color/offWhite"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="2dp"
-        android:textAlignment="viewStart"
-        android:text="content kidisplayna" />
+        android:textAlignment="viewStart" />
 
     <TextView
         android:id="@+id/types"
@@ -43,8 +41,7 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:textColor="@color/highlight"
-        android:textAlignment="viewEnd"
-        android:text="BNP" />
+        android:textAlignment="viewEnd" />
 
     <!-- ✅ Snippet of la_text1 -->
     <TextView
@@ -56,8 +53,7 @@
         android:layout_alignParentEnd="true"
         android:maxLines="1"
         android:ellipsize="end"
-        android:textSize="14sp"
-        android:text="This is la_text1 snippet..." />
+        android:textSize="14sp" />
 
     <!-- ✅ Snippet of chorus1 -->
     <TextView
@@ -69,7 +65,6 @@
         android:layout_alignParentEnd="true"
         android:maxLines="1"
         android:ellipsize="end"
-        android:textSize="14sp"
-        android:text="This is chorus1 snippet..." />
+        android:textSize="14sp" />
 
 </RelativeLayout>

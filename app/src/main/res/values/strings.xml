@@ -24,5 +24,9 @@
     <string name="searchicon">searchIcon</string>
     <string name="la_number_leh_a_thulu_a_zonbaihlamna">La Number leh a Thulu a zonbaihlamna</string>
     <string name="labupi_zon_baihlamna">Labupi zon baihlamna</string>
+    <string name="biakna_late">Biakna Late</string>
+    <string name="pathian_ngaihla">Pathian Ngaihla</string>
+    <string name="playicon">playIcon</string>
+    <string name="cancelbtn">cancelBtn</string>
 
 </resources>

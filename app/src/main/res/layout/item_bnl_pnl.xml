@@ -12,7 +12,6 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
-        android:text="0"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/offWhite"
@@ -27,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:gravity="center"
-        android:text="Al Thupi"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/offWhite"
@@ -40,7 +38,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="(Al Thupi)"
         android:textSize="11sp"
         android:textColor="@color/offWhite"
         android:textStyle="italic"
@@ -54,6 +51,7 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginEnd="12dp"
+        android:contentDescription="@string/bookmark"
         android:visibility="gone"
         android:src="@drawable/icon_bookmark"
         app:layout_constraintBottom_toBottomOf="@id/laThulu"
@@ -81,7 +79,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="12dp"
-                android:text="Title text khat"
                 android:textSize="12sp"
                 android:textColor="@color/offWhite"
                 android:textStyle="bold" />
@@ -93,7 +90,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="12dp"
-                android:text="Title text nihna"
                 android:textSize="12sp"
                 android:textColor="@color/offWhite"
                 android:textStyle="bold" />
@@ -106,7 +102,6 @@
                 android:layout_below="@id/laPhuaktu1"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="12dp"
-                android:text="Title text thumna"
                 android:textSize="12sp"
                 android:textColor="@color/offWhite"
                 android:textStyle="bold" />
@@ -119,7 +114,6 @@
                 android:layout_below="@id/laPhuaktu2"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="12dp"
-                android:text="Title text lina"
                 android:textSize="12sp"
                 android:textColor="@color/offWhite"
                 android:textStyle="bold" />
@@ -142,7 +136,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:text="DOH IS C"
                     android:textSize="12sp"
                     android:textColor="@color/offWhite"
                     android:textStyle="bold" />
@@ -151,8 +144,8 @@
                     android:id="@+id/laKeyIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/icon_play"
-                    android:contentDescription="Key Icon" />
+                    android:contentDescription="@string/playicon"
+                    android:src="@drawable/icon_play" />
 
             </LinearLayout>
 
@@ -171,7 +164,6 @@
                     android:id="@+id/laNumbering1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:padding="8dp"
@@ -183,7 +175,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="La display here\nsecond line\nthird line"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -206,7 +197,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -225,7 +215,6 @@
                     android:id="@+id/laNumbering2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
@@ -237,7 +226,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -259,7 +247,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -278,7 +265,6 @@
                     android:id="@+id/laNumbering3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3"
                     android:textSize="14sp"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
@@ -290,7 +276,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -311,7 +296,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -329,7 +313,6 @@
                     android:id="@+id/laNumbering4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4"
                     android:padding="8dp"
                     android:textSize="14sp"
                     android:textColor="@color/offWhite"
@@ -341,7 +324,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -362,7 +344,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -380,7 +361,6 @@
                     android:id="@+id/laNumbering5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
@@ -392,7 +372,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -413,7 +392,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -431,7 +409,6 @@
                     android:id="@+id/laNumbering6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
@@ -443,7 +420,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -464,7 +440,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -482,7 +457,6 @@
                     android:id="@+id/laNumbering7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
@@ -494,7 +468,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
@@ -514,7 +487,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
@@ -531,7 +503,6 @@
                     android:id="@+id/laNumbering8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
@@ -543,7 +514,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
@@ -563,7 +533,6 @@
                     android:textStyle="italic"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
@@ -580,7 +549,6 @@
                     android:id="@+id/laNumbering9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
@@ -592,7 +560,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
@@ -609,7 +576,6 @@
                     android:id="@+id/laNumbering10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="1dp"
@@ -621,7 +587,6 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
-                    android:text="la display na mun d"
                     android:textSize="16sp" />
             </LinearLayout>
 

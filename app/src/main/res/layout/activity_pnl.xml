@@ -11,7 +11,7 @@
         android:id="@+id/pnlToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:title="Biakna Late"
+        android:title="@string/pathian_ngaihla"
         app:navigationIcon="@drawable/icon_menu" />
 
 
