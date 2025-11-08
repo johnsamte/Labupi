@@ -23,4 +23,8 @@
     <color name="thupi_zonna">#CFCFCF</color>
 
     <color name="border_color">#727C7C7C</color>
+
+    <color name="radius_color">#737373</color>
+    <color name="text_bg">#262525</color>
+    <color name="btn_bg">#F2EEEE</color>
 </resources>

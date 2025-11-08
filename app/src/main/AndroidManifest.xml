@@ -32,6 +32,8 @@
         <activity android:name=".BookmarkActivity"/>
         <activity android:name=".SearchActivity"/>
         <activity android:name=".AboutActivity"/>
+        <activity android:name=".FeedbackActivity"/>
+
 
         <provider
             android:name="androidx.core.content.FileProvider"

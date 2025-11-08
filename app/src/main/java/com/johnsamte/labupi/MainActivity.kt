@@ -125,6 +125,11 @@ class MainActivity : AppCompatActivity() {
 
                 true
             }
+            R.id.feedback -> {
+                val intent = Intent(this, FeedbackActivity::class.java)
+                startActivity(intent)
+                true
+            }
 
             else -> super.onOptionsItemSelected(item)
         }

@@ -33,4 +33,10 @@
         android:icon="@drawable/icon_update"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/feedback"
+        android:title="@string/feedback_piakna"
+        android:icon="@drawable/icon_feedback"
+        app:showAsAction="never"/>
+
 </menu>

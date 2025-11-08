@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/feedbackToolbar"
+        app:title="feedback piakna"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackTitle"
+        android:autofillHints=""
+        android:hint="@string/title"
+        android:inputType="text"
+        android:background="@drawable/feedback_bg"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackBody"
+        android:autofillHints=""
+        android:hint="@string/message"
+        android:inputType="textMultiLine"
+        android:background="@drawable/feedback_bg"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="top"
+        android:lines="8"/>
+
+    <Button
+        android:id="@+id/sendFeedbackButton"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/send_feedback"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn_bg" />
+
+
+</LinearLayout>

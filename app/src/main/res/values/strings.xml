@@ -28,5 +28,9 @@
     <string name="pathian_ngaihla">Pathian Ngaihla</string>
     <string name="playicon">playIcon</string>
     <string name="cancelbtn">cancelBtn</string>
+    <string name="feedback_piakna">Feedback Piakna</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="message">Message</string>
+    <string name="title">Title</string>
 
 </resources>
