@@ -2,10 +2,12 @@ package com.johnsamte.labupi
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.GestureDetector
 import android.view.Menu
 import android.view.MenuItem
 import android.view.MotionEvent
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
@@ -143,22 +145,45 @@ class BnlActivity : AppCompatActivity() {
         }
     }
 
+    private val currentLabuData: LabuData
+        get() {
+            val position = binding.biaknaLaViewPager.currentItem
+            return bnlPagerAdapter.getItemAt(position)
+        }
+
+
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.bnlpnl_menu, menu)
         currentMenuItem = menu?.findItem(R.id.bookmark)
         updateBookmarkIcon() // ✅ refresh immediately after menu is created
-        return super.onCreateOptionsMenu(menu)
+        try {
+            val method = menu?.javaClass?.getDeclaredMethod(
+                "setOptionalIconsVisible", Boolean::class.javaPrimitiveType
+            )
+            method?.isAccessible = true
+            method?.invoke(menu, true)
+        } catch (e: Exception) {
+            e.printStackTrace() // fallback if reflection fails
+        }
+
+        return true
     }
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            //R.id.icon_aa -> {
-               // showBottomSheet()
-               // true
-           // }
+            R.id.export -> {
+              val data = currentLabuData
+                val file = PptxCreator.createPptx(this, data)
+
+                Toast.makeText(this, "Saved: ${file.absolutePath}", Toast.LENGTH_LONG).show()
+
+                true
+            }
+
+
             R.id.share -> {
                 shareContent()
                 true
@@ -252,7 +277,5 @@ class BnlActivity : AppCompatActivity() {
         super.onResume()
         updateBookmarkIcon() // refresh toolbar icon when returning from BookmarkActivity
     }
-
-
 
 }

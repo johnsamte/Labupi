@@ -40,6 +40,10 @@ class FeedbackActivity : AppCompatActivity() {
 
         try {
             startActivity(Intent.createChooser(intent, "Send Feedback"))
+
+            binding.feedbackTitle.setText("")
+            binding.feedbackBody.setText("")
+
         } catch (e: ActivityNotFoundException) {
             Toast.makeText(this, "No email clients installed.", Toast.LENGTH_SHORT).show()
         }

@@ -167,6 +167,7 @@
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:padding="8dp"
+                    android:text="1"
                     android:textColor="@color/offWhite" />
 
                 <TextView
@@ -217,6 +218,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
+                    android:text="2"
                     android:padding="8dp"
                     android:textStyle="bold" />
 
@@ -267,6 +269,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:padding="8dp"
+                    android:text="3"
                     android:textColor="@color/offWhite"
                     android:textStyle="bold" />
 
@@ -314,6 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
+                    android:text="4"
                     android:textSize="14sp"
                     android:textColor="@color/offWhite"
                     android:textStyle="bold" />
@@ -364,6 +368,7 @@
                     android:padding="8dp"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
+                    android:text="5"
                     android:textStyle="bold" />
 
                 <TextView
@@ -412,6 +417,7 @@
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
+                    android:text="6"
                     android:textStyle="bold" />
 
                 <TextView
@@ -460,6 +466,7 @@
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
+                    android:text="7"
                     android:textStyle="bold" />
 
                 <TextView
@@ -506,6 +513,7 @@
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="8dp"
+                    android:text="8"
                     android:textStyle="bold" />
 
                 <TextView
@@ -551,6 +559,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
+                    android:text="9"
                     android:padding="8dp"
                     android:textStyle="bold" />
 
@@ -579,6 +588,7 @@
                     android:textColor="@color/offWhite"
                     android:textSize="14sp"
                     android:padding="1dp"
+                    android:text="10"
                     android:textStyle="bold" />
 
                 <TextView

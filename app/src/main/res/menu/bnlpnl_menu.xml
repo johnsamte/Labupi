@@ -2,16 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <item
-        android:id="@+id/share"
-        android:title="Share"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/icon_share"/>
-
     <item
         android:id="@+id/bookmark"
         android:title="@string/bookmark"
         app:showAsAction="ifRoom"
         android:icon="@drawable/icon_bookmark_add"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        app:showAsAction="never"
+        android:icon="@drawable/icon_share"/>
+
+    <item
+        android:id="@+id/export"
+        android:title="@string/export_to_pptx"
+        app:showAsAction="never"
+        android:icon="@drawable/export_icon"/>
 </menu>
