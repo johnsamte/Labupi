@@ -47,7 +47,7 @@ class ContentBnlActivity : AppCompatActivity() {
 
     private fun setupToolbar() {
         setSupportActionBar(binding.contentBnlToolbar)
-        supportActionBar?.title = "Content"
+        supportActionBar?.title = "Zon Baihlamna"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // Set the toolbar's back button behavior
         binding.contentBnlToolbar.setNavigationOnClickListener {
@@ -74,7 +74,7 @@ class ContentBnlActivity : AppCompatActivity() {
         val searchView = searchItem?.actionView as? androidx.appcompat.widget.SearchView
 
         // Set the query hint
-        searchView?.queryHint = "La Number leh Thulu Zonna"
+        searchView?.queryHint = "Zon Baihlamna Mun"
 
         searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

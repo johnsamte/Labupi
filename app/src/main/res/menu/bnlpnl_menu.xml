@@ -8,15 +8,12 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/icon_bookmark_add"/>
 
-    <item
-        android:id="@+id/share"
-        android:title="@string/share"
-        app:showAsAction="never"
-        android:icon="@drawable/icon_share"/>
 
     <item
-        android:id="@+id/export"
-        android:title="@string/export_to_pptx"
-        app:showAsAction="never"
-        android:icon="@drawable/export_icon"/>
+        android:id="@+id/menuVert"
+        android:title="menu_vert"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/more_vert_menu"/>
+
+
 </menu>

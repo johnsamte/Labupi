@@ -84,5 +84,20 @@ class ContentBnlAdapter (
             return oldItem == newItem // data class handles equality
         }
     }
+
+    private var recyclerView: RecyclerView? = null
+
+    override fun onAttachedToRecyclerView(johnsamte: RecyclerView) {
+        super.onAttachedToRecyclerView(johnsamte)
+        recyclerView = johnsamte
+    }
+
+    override fun onCurrentListChanged(
+        previousList: MutableList<LabuContent>,
+        currentList: MutableList<LabuContent>
+    ) {
+        super.onCurrentListChanged(previousList, currentList)
+        recyclerView?.scrollToPosition(0)
+    }
 }
 

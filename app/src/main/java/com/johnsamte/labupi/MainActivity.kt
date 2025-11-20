@@ -245,7 +245,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("Range")
      fun downloadAndInstallApk(context: Context, apkUrl: String) {
-        val downloadManager = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+        val downloadManager = context.getSystemService(DOWNLOAD_SERVICE) as DownloadManager
 
         // 1️⃣ Cancel any existing active downloads for our file
         val query = DownloadManager.Query()
@@ -280,7 +280,7 @@ class MainActivity : AppCompatActivity() {
         val request = DownloadManager.Request(apkUrl.toUri())
             .setTitle("Downloading Update")
             .setDescription("Ngak hamham ni aki download sung..")
-            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION)
             .setDestinationUri(Uri.fromFile(downloadFile)) // ✅ overwrite only
             .setAllowedOverMetered(true)
             .setAllowedOverRoaming(true)

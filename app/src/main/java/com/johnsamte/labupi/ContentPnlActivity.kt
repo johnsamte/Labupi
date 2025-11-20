@@ -47,7 +47,7 @@ class ContentPnlActivity : AppCompatActivity() {
 
     private fun setupToolbar() {
         setSupportActionBar(binding.contentPnlToolbar)
-        supportActionBar?.title = "Content"
+        supportActionBar?.title = "Zon Baihlamna"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // Set the toolbar's back button behavior
         binding.contentPnlToolbar.setNavigationOnClickListener {
@@ -74,7 +74,7 @@ class ContentPnlActivity : AppCompatActivity() {
     val searchView = searchItem?.actionView as? androidx.appcompat.widget.SearchView
 
     // Set the query hint
-    searchView?.queryHint = "La Number leh Thulu Zonna"
+    searchView?.queryHint = "Zon Baihlamna Mun"
 
     searchView?.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
     override fun onQueryTextSubmit(query: String?): Boolean {
@@ -113,6 +113,7 @@ class ContentPnlActivity : AppCompatActivity() {
             adapter.sortItemsAlphabetically()
             menuItem.setIcon(R.drawable.icon_sort) // Change to Sort Icon
         }
+
         isSortedByTitle = !isSortedByTitle // Toggle the sorting state
     }
 

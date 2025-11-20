@@ -34,5 +34,36 @@
     <string name="title">Title</string>
     <string name="share">Share</string>
     <string name="export_to_pptx">Export to pptx</string>
+    <string name="main_title">Labupi</string>
+    <string name="api_url_github_latest_release">https://api.github.com/repos/johnsamte/Labupi/releases/latest</string>
+    <string name="json_tag_name">tag_name</string>
+    <string name="version_prefix">v</string>
+    <string name="json_body">body</string>
+    <string name="json_assets">assets</string>
+    <string name="json_browser_download_url">browser_download_url</string>
+    <string name="update_dialog_up_to_date">YOUR APP IS UP-TO-DATE
 
+Current Install Version : v%1$s</string>
+    <string name="dialog_ok">OK</string>
+    <string name="update_check_failed">Update Check Failed ⚠️
+
+Something went wrong while checking for updates. Please try again later.</string>
+    <string name="dialog_try_again">AHIHLELAH</string>
+    <string name="update_dialog_title">Labupi App Update : (v%1$s)</string>
+    <string name="update_dialog_whats_new">Kikhek khenkhat:
+%1$s</string>
+    <string name="dialog_download">Download</string>
+    <string name="dialog_later">Later</string>
+    <string name="downloading_update_title">Downloading Update</string>
+    <string name="update_apk_filename">labupi_update.apk</string>
+    <string name="downloading_update_description">Ngak hamham ni aki download sung..</string>
+    <string name="downloading_update_message">Downloading update</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="apk_mime_type">application/vnd.android.package-archive</string>
+    <string name="cannot_launch_installer">Cannot launch installer</string>
+    <string name="download_uri_not_found">Download URI not found</string>
+    <string name="download_failed_toast">Download failed</string>
+    <string name="fontsukletna">fontSukletna</string>
+    <string name="fontsukkakna">fontSukkakna</string>
+    <string name="export">export</string>
 </resources>
